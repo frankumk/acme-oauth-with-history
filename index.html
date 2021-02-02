@@ -38,9 +38,6 @@
             const loginList = (await axios.get(`api/${auth.id*1}/history`)).data
             this.setState({ auth, loginList: [...loginList] });
             
-            console.log(this.state)
-
-            //this.setState({ auth });
           }
         }
         componentDidMount(){
